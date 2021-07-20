@@ -75,7 +75,7 @@ function Treinos() {
         </div>
       )}
       {(!user.membershipStatus || user.membershipStatus == "Inactive") && (
-        <div className="w-screen h-screen flex justify-center items-center bg-gray-100">
+        <div className="w-screen h-screen flex justify-center items-start pt-40 bg-gray-100">
           <form className="p-10 bg-white rounded flex justify-center items-center flex-col shadow-md">
             <p className="mb-5 text-3xl uppercase text-gray-600">
               {user.membershipStatus == "Active" || !user.membershipStatus ? (

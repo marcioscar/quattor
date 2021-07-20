@@ -52,7 +52,7 @@ export default function Home() {
 
             <div className="ml-1">
               <span className=" text-xl">
-                Rua 7 sul - Araucárias - Águas Claras
+                Rua 5 sul - Araucárias - Águas Claras
               </span>
             </div>
           </div>
