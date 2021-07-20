@@ -108,9 +108,9 @@ function Treinos() {
           </form>
         </div>
       )}
-      <div className="">
+      {user.membershipStatus === "Active" && (
         <TreinosGrupo aluno={user.idMember} />
-      </div>
+      )}
     </main>
   );
 }

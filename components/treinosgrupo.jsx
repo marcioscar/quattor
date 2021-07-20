@@ -55,9 +55,6 @@ const TreinosGrupo = (props) => {
   //   );
   // console.log(data.data);
 
-  const trocaCor = (index) => {
-    const cor = "white";
-  };
   return (
     <div>
       <div className="container px-6 mx-auto grid">
