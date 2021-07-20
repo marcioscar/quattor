@@ -56,7 +56,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="flex items-center text-sm font-medium my-5 sm:mt-2 sm:mb-4">
+          <div className="flex items-center  justify-between text-sm font-medium my-5 sm:mt-2 sm:mb-4">
             <img
               src="whatsapp.png"
               alt="local"
@@ -64,10 +64,19 @@ export default function Home() {
             />
 
             <div className="ml-1">
-              <a className="text-xl " href="https://wa.me/5561993190568">
+              <a
+                className="text-xl tracking-tight"
+                href="https://wa.me/5561993190568"
+              >
                 (61) 99319-0568
               </a>
             </div>
+            <a href="https://wa.me/5561993190568">
+              <button className="bg-laranja tracking-tighter ml-5 px-2 py-2  text-white inline-flex items-center space-x-2 rounded">
+                <img src="whatsapp.svg" className="w-4 h-4 fill-current"></img>
+                <span>Aula experimental </span>
+              </button>
+            </a>
           </div>
         </div>
 
