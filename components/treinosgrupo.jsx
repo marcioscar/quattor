@@ -104,7 +104,7 @@ const TreinosGrupo = (props) => {
                 <div className=" grid  gap-2 sm:grid-cols-2 lg:grid-cols-3">
                   {grupo.exercicios.map((exe, index) => (
                     <div
-                      key={exe.nome}
+                      key={index}
                       className="mb-2 font-thin p-2 bg-white rounded-lg shadow "
                     >
                       <div>
