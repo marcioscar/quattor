@@ -56,7 +56,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="flex items-center  justify-between text-sm font-medium my-5 sm:mt-2 sm:mb-4">
+          <div className="flex items-center  justify-between md:justify-start text-sm font-medium my-5 sm:mt-2 sm:mb-4">
             <img
               src="whatsapp.png"
               alt="local"
