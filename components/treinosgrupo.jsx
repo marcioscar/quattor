@@ -71,7 +71,7 @@ const TreinosGrupo = (props) => {
           <option value="quads">Quads + Panturrilha</option>
           <option value="posterior">Posterior + Glúteos</option>
         </select>
-        <div className="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-6 mb-8 ">
           {/* <div className="flex items-center p-4 bg-white rounded-lg shadow-md"> */}
           <div>
             {/* <p className="mb-2 text-sm font-medium text-gray-600">{group}</p> */}
@@ -88,42 +88,43 @@ const TreinosGrupo = (props) => {
                     Feito
                   </button>
                 </div>
+                <div className=" grid  gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                  {grupo.exercicios.map((exe, index) => (
+                    <div
+                      key={exe.nome}
+                      className="mb-2 font-thin p-2 bg-white rounded-lg shadow "
+                    >
+                      <div>
+                        <div className="flex flex-row justify-between">
+                          <div
+                            id={exe.nome}
+                            className="text-lg text-verde font-normal"
+                          >
+                            {exe.nome}
+                          </div>
 
-                {grupo.exercicios.map((exe, index) => (
-                  <div
-                    key={exe.nome}
-                    className="mb-2 font-thin p-2 bg-white rounded-lg shadow"
-                  >
-                    <div>
-                      <div className="flex flex-row justify-between">
-                        <div
-                          id={exe.nome}
-                          className="text-lg text-verde font-normal"
-                        >
-                          {exe.nome}
-                        </div>
-
-                        {/* <button className="uppercase p-2 flex items-center bg-azul  max-w-max shadow-sm hover:shadow-lg rounded-md w-8 h-8 ">
+                          {/* <button className="uppercase p-2 flex items-center bg-azul  max-w-max shadow-sm hover:shadow-lg rounded-md w-8 h-8 ">
                           <img src="feito.png" alt="" />
                         </button> */}
-                      </div>
+                        </div>
 
-                      <div className="flex items-center content-around">
-                        <img className="w-4 mr-3" src="repetir.png" alt="" />
-                        <p>{exe.Repeticoes}</p>
-                      </div>
-                      <div className="flex items-center content-around">
-                        <img className="w-4 mr-3" src="carga.png" alt="" />
-                        <p>{exe.carga}</p>
-                      </div>
+                        <div className="flex items-center content-around">
+                          <img className="w-4 mr-3" src="repetir.png" alt="" />
+                          <p>{exe.Repeticoes}</p>
+                        </div>
+                        <div className="flex items-center content-around">
+                          <img className="w-4 mr-3" src="carga.png" alt="" />
+                          <p>{exe.carga}</p>
+                        </div>
 
-                      <div className="flex items-center content-around">
-                        <img className="w-4 mr-3" src="atencao.png" alt="" />
-                        <p>{exe.obs}</p>
+                        <div className="flex items-center content-around">
+                          <img className="w-4 mr-3" src="atencao.png" alt="" />
+                          <p>{exe.obs}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             ))}
           </div>
