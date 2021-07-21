@@ -51,7 +51,7 @@ const TreinosGrupo = (props) => {
         </span>
       </div>
     );
-  console.log(data.data);
+  console.log(group.grupo);
 
   return (
     <div>
