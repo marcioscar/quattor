@@ -18,7 +18,7 @@ const TreinosGrupo = (props) => {
     if (!group) return;
     fetch(`/api/treinosgrupo/${group}`, {})
       .then((response) => response.json())
-      .then((data) => setTreino(data));
+      .then((grupo) => setTreino(grupo));
   }, [group]);
 
   const alteratreino = () => {
@@ -40,20 +40,18 @@ const TreinosGrupo = (props) => {
     setGroup("");
     setTreino([]);
   };
-  // console.log(group);
-  //console.log(treino);
 
-  // const { data, error } = useSWR(`/api/treinosgrupo/${group}`, api);
-  // if (error) return <div className="text-red-600">Falha ao carregar</div>;
-  // if (!data)
-  //   return (
-  //     <div className="inline-flex items-center bg-white leading-none text-purple-600 rounded-full p-2 shadow text-teal text-sm">
-  //       <span className="inline-flex bg-verde text-white rounded-full h-6 px-3 justify-center items-center">
-  //         Carregando
-  //       </span>
-  //     </div>
-  //   );
-  // console.log(data.data);
+  const { data, error } = useSWR(`/api/treinosgrupo/`, api);
+  if (error) return <div className="text-red-600">Falha ao carregar</div>;
+  if (!data)
+    return (
+      <div className="inline-flex items-center bg-white leading-none text-purple-600 rounded-full p-2 shadow text-teal text-sm">
+        <span className="inline-flex bg-verde text-white rounded-full h-6 px-3 justify-center items-center">
+          Carregando
+        </span>
+      </div>
+    );
+  console.log(data.data);
 
   return (
     <div>
@@ -61,16 +59,31 @@ const TreinosGrupo = (props) => {
         <select
           value={group}
           onChange={(e) => setGroup(e.target.value)}
+          className="mt-4 overflow-hidden lowercase text-gray-600 font-thin focus:outline-none  cursor-pointer w-full border-gray-100 rounded-t border-b"
+        >
+          <option hidden value="">
+            Selecione o Treino
+          </option>
+
+          {data.data.map((group) => (
+            <option key={group.grupo} value={group.grupo}>
+              {group.grupo}
+            </option>
+          ))}
+        </select>
+        {/* <select
+          value={group}
+          onChange={(e) => setGroup(e.target.value)}
           className="mt-4 overflow-hidden font-thin focus:outline-none  cursor-pointer w-full border-gray-100 rounded-t border-b"
         >
           <option hidden value="">
             Selecione o Treino
           </option>
-          <option value="ombros">Ombros</option>
+          <option value="OMBROS">Ombros + Abdome</option>
           <option value="PEITORAL">Peitoral</option>
           <option value="quads">Quads + Panturrilha</option>
           <option value="posterior">Posterior + Glúteos</option>
-        </select>
+        </select> */}
         <div className="grid gap-6 mb-8 ">
           {/* <div className="flex items-center p-4 bg-white rounded-lg shadow-md"> */}
           <div>
@@ -109,15 +122,15 @@ const TreinosGrupo = (props) => {
                         </div>
 
                         <div className="flex items-center content-around">
-                          <img className="w-4 mr-3" src="repetir.png" alt="" />
+                          <img className=" w-4 mr-3" src="repetir.png" alt="" />
                           <p>{exe.Repeticoes}</p>
                         </div>
-                        <div className="flex items-center content-around">
+                        <div className="flex items-center content-around lowercase">
                           <img className="w-4 mr-3" src="carga.png" alt="" />
                           <p>{exe.carga}</p>
                         </div>
 
-                        <div className="flex items-center content-around">
+                        <div className="flex items-center content-around lowercase ">
                           <img className="w-4 mr-3" src="atencao.png" alt="" />
                           <p>{exe.obs}</p>
                         </div>

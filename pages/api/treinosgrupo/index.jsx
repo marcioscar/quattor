@@ -3,13 +3,6 @@
 import { connectToDatabase } from "../../../utils/mongodb";
 //import { async } from "../../produtos/[prod]";
 
-function getNumberOfWeek() {
-  const today = new Date();
-  const firstDayOfYear = new Date(today.getFullYear(), 0, 1);
-  const pastDaysOfYear = (today - firstDayOfYear) / 86400000;
-  return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
-}
-
 const handler = async (req, res) => {
   try {
     const { method } = req;
@@ -20,12 +13,7 @@ const handler = async (req, res) => {
         const param = req.query;
 
         const { db } = await connectToDatabase();
-        const data = await db
-          .collection("treinos")
-          .find({
-            $and: [{ grupo: param.group }, { semana: getNumberOfWeek() }],
-          })
-          .toArray();
+        const data = await db.collection("treinos").find().toArray();
 
         res.status(200).json(data);
 
