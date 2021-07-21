@@ -55,7 +55,7 @@ const TreinosGrupo = (props) => {
 
   return (
     <div>
-      <div className="container px-6 mx-auto grid">
+      <div className="container px-2 mx-auto grid">
         <select
           value={group}
           onChange={(e) => setGroup(e.target.value)}
