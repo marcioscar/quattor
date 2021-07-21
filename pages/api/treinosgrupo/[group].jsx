@@ -23,7 +23,7 @@ const handler = async (req, res) => {
         const data = await db
           .collection("treinos")
           .find({
-            $and: [{ grupo: param.group }, { semana: getNumberOfWeek() }],
+            $and: [{ grupo: param.group }, { semana: 30 }],
           })
           .toArray();
 
