@@ -7,11 +7,17 @@ const TreinosGrupo = (props) => {
   const [group, setGroup] = useState(2);
   const [treino, setTreino] = useState([]);
   const [aluno, setAluno] = useState(null);
+  const [feito, setFeito] = useState(false);
 
   const ultimotreino = {
     aluno: props.aluno,
     ultimo: group,
   };
+
+  // const realizado = () => {
+  //   setFeito(!feito);
+  //   console.log(feito);
+  // };
 
   //console.log(props.aluno);
   useEffect(() => {
@@ -111,14 +117,18 @@ const TreinosGrupo = (props) => {
                         <div className="flex flex-row justify-between">
                           <div
                             id={exe.nome}
-                            className="text-lg text-verde font-normal"
+                            className="text-lg text-verde  font-normal"
+                            //className={feito ? "text-verde" : "text-vermelho"}
                           >
                             {exe.nome}
                           </div>
 
-                          {/* <button className="uppercase p-2 flex items-center bg-azul  max-w-max shadow-sm hover:shadow-lg rounded-md w-8 h-8 ">
-                          <img src="feito.png" alt="" />
-                        </button> */}
+                          {/* <button
+                            onClick={realizado}
+                            className="uppercase p-2 flex items-center bg-azul  max-w-max shadow-sm hover:shadow-lg rounded-md w-8 h-8 "
+                          >
+                            <img src="feito.png" alt="" />
+                          </button> */}
                         </div>
 
                         <div className="flex items-center content-around">
