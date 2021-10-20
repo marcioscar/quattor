@@ -32,7 +32,25 @@ export default function Home() {
           </div>
         </div>
       </nav>
+      <div className="block">
+        <div className="inline relative">
+          <Link href="https://www.bilheteriadigital.com/espetaculo-de-ballet-classico-e-dancas-13-de-novembro">
+            <a>
+              <button className="bg-purple-600 px-4 py-1 w-full flex items-center justify-center  h-16 font-light mb-2 mt-2 space-x-2 rounded">
+                <img
+                  src="aladdin.png"
+                  alt="local"
+                  className=" h-8 rounded-full mr-2"
+                />
 
+                <span className="  text-xl font-montserrat  text-white">
+                  Comprar Ingressos Aladdin
+                </span>
+              </button>
+            </a>
+          </Link>
+        </div>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:px-8 sm:py-12 sm:gap-x-8 md:py-16 ">
         <div className="relative z-10 col-start-1 row-start-1 px-4 pt-40 pb-3 bg-gradient-to-t from-black sm:bg-none">
           <p className="text-sm font-medium text-white sm:mb-1 sm:text-gray-500">
@@ -74,7 +92,7 @@ export default function Home() {
             <a href="https://wa.me/5561993190568">
               <button className="bg-laranja tracking-tighter ml-5 px-2 py-2  text-white inline-flex items-center space-x-2 rounded">
                 <img src="whatsapp.svg" className="w-4 h-4 fill-current"></img>
-                <span>Aula experimental </span>
+                <span>Aula experimental</span>
               </button>
             </a>
           </div>

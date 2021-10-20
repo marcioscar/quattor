@@ -14,12 +14,6 @@ const TreinosGrupo = (props) => {
     ultimo: group,
   };
 
-  // const realizado = () => {
-  //   setFeito(!feito);
-  //   console.log(feito);
-  // };
-
-  //console.log(props.aluno);
   useEffect(() => {
     if (!group) return;
     fetch(`/api/treinosgrupo/${group}`, {})
@@ -77,23 +71,9 @@ const TreinosGrupo = (props) => {
             </option>
           ))}
         </select>
-        {/* <select
-          value={group}
-          onChange={(e) => setGroup(e.target.value)}
-          className="mt-4 overflow-hidden font-thin focus:outline-none  cursor-pointer w-full border-gray-100 rounded-t border-b"
-        >
-          <option hidden value="">
-            Selecione o Treino
-          </option>
-          <option value="OMBROS">Ombros + Abdome</option>
-          <option value="PEITORAL">Peitoral</option>
-          <option value="quads">Quads + Panturrilha</option>
-          <option value="posterior">Posterior + Glúteos</option>
-        </select> */}
+
         <div className="grid gap-6 mb-8 ">
-          {/* <div className="flex items-center p-4 bg-white rounded-lg shadow-md"> */}
           <div>
-            {/* <p className="mb-2 text-sm font-medium text-gray-600">{group}</p> */}
             {treino.map((grupo) => (
               <div key="_id">
                 <div className="flex flex-row justify-between  font-bold text-laranja place-items-center m-2 text-xl">
@@ -122,13 +102,6 @@ const TreinosGrupo = (props) => {
                           >
                             {exe.nome}
                           </div>
-
-                          {/* <button
-                            onClick={realizado}
-                            className="uppercase p-2 flex items-center bg-azul  max-w-max shadow-sm hover:shadow-lg rounded-md w-8 h-8 "
-                          >
-                            <img src="feito.png" alt="" />
-                          </button> */}
                         </div>
 
                         <div className="flex items-center content-around">
