@@ -32,7 +32,7 @@ export default function Home() {
           </div>
         </div>
       </nav>
-      <div className="block">
+      {/* <div className="block">
         <div className="inline relative">
           <Link href="https://www.bilheteriadigital.com/espetaculo-de-ballet-classico-e-dancas-13-de-novembro">
             <a>
@@ -50,7 +50,7 @@ export default function Home() {
             </a>
           </Link>
         </div>
-      </div>
+      </div> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:px-8 sm:py-12 sm:gap-x-8 md:py-16 ">
         <div className="relative z-10 col-start-1 row-start-1 px-4 pt-40 pb-3 bg-gradient-to-t from-black sm:bg-none">
           <p className="text-sm font-medium text-white sm:mb-1 sm:text-gray-500">
