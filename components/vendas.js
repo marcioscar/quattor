@@ -11,26 +11,19 @@ const vendas = () => {
           Escolha um plano e venha fazer parte da família QUATTOR
         </h3>
       </div>
-      <div className="max-w-4xl mx-auto md:flex">
+      <div className="max-w-4xl mx-auto md:flex md: gap-4 md:justify-around">
         {/* black friday */}
 
-        <div
-          id="whoobe-3fery"
-          className="w-full md:w-64 mb-4  justify-center items-center bg-white shadow-lg rounded-lg flex flex-col"
-        >
+        <div className="w-full md:w-1/2 mb-4 justify-center items-center bg-white shadow-lg rounded-lg flex flex-col">
           <img
             src="black.jpg"
             alt="img"
             title="img"
             className="w-full h-auto object-cover rounded-t-lg"
-            id="whoobe-ixxe5"
           />
-          <div
-            id="whoobe-1okdg"
-            className="w-full p-4 justify-start flex flex-col"
-          >
-            <h4 className="border-b-2 text-lg font-semibold" id="whoobe-3mr7n">
-              Black Week Quattor
+          <div className="w-full p-4 justify-start flex flex-col">
+            <h4 className="border-b-2 text-vermelho  font-semibold">
+              Black Week - 22 à 29/11/2021
             </h4>
             <p className="my-4 text-lg" id="whoobe-950fw">
               Plano Musculação - Horário Livre
@@ -48,6 +41,90 @@ const vendas = () => {
             </div>
           </div>
         </div>
+
+        <div className="w-full md:w-1/2  mb-4 justify-center items-center bg-white shadow-lg rounded-lg flex flex-col">
+          <img
+            src="fitness.jpg"
+            alt="img"
+            title="img"
+            className="w-full h-auto object-cover rounded-t-lg"
+          />
+          <div className="w-full p-4 justify-start flex flex-col">
+            <h4 className="border-b-2 text-vermelho text-left text-lg font-semibold">
+              R$ 214,00 <span className="text-base text-gray-400">/mensal</span>
+            </h4>
+            <p className="mt-4 text-lg" id="whoobe-950fw">
+              QUATTOR FITNESS ASSINATURA{" "}
+            </p>
+            <p className>
+              <ul className="text-sm px-2 ">
+                <div className="flex justify-start  text-gray-700  rounded-md px-2 py-2 ">
+                  <span className="bg-verde h-2 w-2 mt-2 rounded-full"></span>
+                  <div className="flex-grow text-base  px-2">
+                    Aulas Incluídas:
+                  </div>
+                </div>
+                <div className="flex justify-start  text-laranja  rounded-md px-2 ">
+                  <div className="flex-grow text-base pl-4">
+                    Boxe, Pilates Solo, FitDance, Zumba
+                  </div>
+                </div>
+                <div className="flex justify-start  text-gray-700  rounded-md px-2 py-2">
+                  <span className="bg-verde h-2 w-2 mt-2 rounded-full"></span>
+                  <div className="flex-grow text-base px-2 ">Horário Livre</div>
+                </div>
+              </ul>
+            </p>
+            <div className="w-full">
+              <a href="https://evo-totem.w12app.com.br/quattor/1/site/oportunidade/cadastro/1/0">
+                <button className=" bg-verde hover:bg-gray-700 text-white rounded-md px-10 py-2 transition-colors w-full">
+                  Comprar
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="w-full md:w-64 mb-4 ml-4 justify-center items-center bg-white shadow-lg rounded-lg flex flex-col">
+          <img
+            src="fitness.jpg"
+            alt="img"
+            title="img"
+            className="w-full h-auto object-cover rounded-t-lg"
+          />
+          <div className="w-full p-4 justify-start flex flex-col">
+            <h4 className="border-b-2 text-vermelho text-left text-lg font-semibold">
+              R$ 210,00 <span className="text-base text-gray-400">/mensal</span>
+            </h4>
+            <p className="my-4 text-lg" id="whoobe-950fw">
+              MUSCULAÇÃO ASSINATURA{" "}
+            </p>
+            <p className>
+              <ul className="text-sm px-2 ">
+                <div className="flex justify-start  text-gray-700  rounded-md px-2 py-2 ">
+                  <span className="bg-verde h-2 w-2 m-2 rounded-full"></span>
+                  <div className="flex-grow text-base  px-2">Musculação</div>
+                </div>
+                <div className="flex justify-start  text-gray-700  rounded-md px-2 ">
+                  <div className="flex-grow text-base  px-2">
+                    Somente Musculação
+                  </div>
+                </div>
+                <div className="flex justify-start  text-gray-700  rounded-md px-2 py-2">
+                  <span className="bg-verde h-2 w-2 m-2 rounded-full"></span>
+                  <div className="flex-grow text-base  ">Horário Livre</div>
+                </div>
+              </ul>
+            </p>
+            <div className="w-full">
+              <a href="https://evo-totem.w12app.com.br/quattor/1/site/oportunidade/cadastro/1/0">
+                <button className=" bg-verde hover:bg-gray-700 text-white rounded-md px-10 py-2 transition-colors w-full">
+                  Comprar
+                </button>
+              </a>
+            </div>
+          </div>
+        </div> */}
 
         {/* <div className="w-full md:w-1/3 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:my-6 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
           <div className="w-full flex-grow">
@@ -81,7 +158,7 @@ const vendas = () => {
             </a>
           </div>
         </div> */}
-        <div className="w-full md:w-1/3 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:my-6 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+        {/* <div className="w-full md:w-1/3 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:my-6 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
           <div className="w-full flex-grow">
             <h2 className="text-center text-gray-500 font-bold uppercase mb-4">
               QUATTOR FITNESS ASSINATURA
@@ -114,8 +191,8 @@ const vendas = () => {
               </button>
             </a>
           </div>
-        </div>
-        <div className="w-full md:w-1/3 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:my-6 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+        </div> */}
+        {/* <div className="w-full md:w-1/3 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:my-6 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
           <div className="w-full flex-grow">
             <h2 className="text-center text-gray-500 font-bold uppercase mb-4">
               MUSCULAÇÃO ASSINATURA
@@ -141,7 +218,7 @@ const vendas = () => {
               Comprar
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
