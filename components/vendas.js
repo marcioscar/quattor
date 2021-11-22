@@ -12,7 +12,44 @@ const vendas = () => {
         </h3>
       </div>
       <div className="max-w-4xl mx-auto md:flex">
-        <div className="w-full md:w-1/3 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:my-6 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+        {/* black friday */}
+
+        <div
+          id="whoobe-3fery"
+          className="w-full md:w-64 mb-4  justify-center items-center bg-white shadow-lg rounded-lg flex flex-col"
+        >
+          <img
+            src="black.jpg"
+            alt="img"
+            title="img"
+            className="w-full h-auto object-cover rounded-t-lg"
+            id="whoobe-ixxe5"
+          />
+          <div
+            id="whoobe-1okdg"
+            className="w-full p-4 justify-start flex flex-col"
+          >
+            <h4 className="border-b-2 text-lg font-semibold" id="whoobe-3mr7n">
+              Black Week Quattor
+            </h4>
+            <p className="my-4 text-lg" id="whoobe-950fw">
+              Plano Musculação - Horário Livre
+            </p>
+            <p className="my-4" id="whoobe-950fw">
+              1 mês por R$ 99,00 depois R$ 150,00 no sistema de assinatura, sem
+              comprometer o limite de seu cartão !!!
+            </p>
+            <div className="w-full">
+              <a href="https://evo-totem.w12app.com.br/quattor/1/site/oportunidade/cadastro/823/0">
+                <button className=" bg-verde hover:bg-gray-700 text-white rounded-md px-10 py-2 transition-colors w-full">
+                  Comprar
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="w-full md:w-1/3 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:my-6 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
           <div className="w-full flex-grow">
             <h2 className="text-center text-gray-500 font-bold uppercase mb-4">
               HORA CERTA ASSINATURA
@@ -43,7 +80,7 @@ const vendas = () => {
               </button>
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="w-full md:w-1/3 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:my-6 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
           <div className="w-full flex-grow">
             <h2 className="text-center text-gray-500 font-bold uppercase mb-4">

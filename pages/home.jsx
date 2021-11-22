@@ -140,9 +140,9 @@ export default function Home() {
         </div>
       </div>
       <Vendas />
-      {/* <ClassesCard /> */}
       <div className="flex items-center justify-center mt-8">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:space-x-4">
+          {/* <ClassesCard /> */}
           <ClassesDia />
           <Classes />
         </div>
