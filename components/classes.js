@@ -76,7 +76,7 @@ const Classes = () => {
       </div>
 
       <div className="mt-4 overflow-hidden">
-        <div className="card-content divide-y flex flex-col gap-y-3 mt-5">
+        <div className="card-content divide-y flex flex-col gap-y-2 mt-5">
           {/* <table className=" w-full table-auto ">
           <thead>
             <tr className="bg-gray-200 text-gray-500 uppercase text-sm leading-normal">

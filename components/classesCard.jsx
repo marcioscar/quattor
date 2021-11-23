@@ -50,7 +50,7 @@ const ClassesCard = () => {
           </div>
         </div>
 
-        <div className="card-content divide-y flex flex-col gap-y-3 mt-5">
+        <div className="card-content divide-y flex flex-col gap-y-2 mt-5">
           {hourFilter.map(
             ({ turma, start, classe, plano, finish, _id, icon }) => (
               <div
