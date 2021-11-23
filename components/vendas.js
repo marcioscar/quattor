@@ -2,7 +2,7 @@
 
 const vendas = () => {
   return (
-    <div className="w-full mx-auto  px-5 py-10 text-gray-600 mb-10">
+    <div className="w-full mx-auto px-5 py-10 text-gray-600 mb-4">
       <div className="text-center max-w-xl mx-auto">
         <h1 className="text-2xl md:text-4xl font-medium mb-5">
           Planos da Academia
@@ -11,7 +11,7 @@ const vendas = () => {
           Escolha um plano e venha fazer parte da família QUATTOR
         </h3>
       </div>
-      <div className="max-w-4xl mx-auto md:flex md: gap-4 md:justify-around">
+      <div className="max-w-4xl mx-auto md:flex md:gap-6 md:justify-between">
         {/* black friday */}
 
         <div className="w-full md:w-1/2 mb-4 justify-center items-center bg-white shadow-lg rounded-lg flex flex-col">
@@ -25,10 +25,8 @@ const vendas = () => {
             <h4 className="border-b-2 text-vermelho  font-semibold">
               Black Week - 22 à 29/11/2021
             </h4>
-            <p className="my-4 text-lg" id="whoobe-950fw">
-              Plano Musculação - Horário Livre
-            </p>
-            <p className="my-4" id="whoobe-950fw">
+            <p className="my-4 text-lg">Plano Musculação - Horário Livre</p>
+            <p className="my-4">
               1 mês por R$ 99,00 depois R$ 150,00 no sistema de assinatura, sem
               comprometer o limite de seu cartão !!!
             </p>
@@ -66,7 +64,7 @@ const vendas = () => {
                 </div>
                 <div className="flex justify-start  text-laranja  rounded-md px-2 ">
                   <div className="flex-grow text-base pl-4">
-                    Boxe, Pilates Solo, FitDance, Zumba
+                    Boxe, Pilates Solo, FitDance, Spinning
                   </div>
                 </div>
                 <div className="flex justify-start  text-gray-700  rounded-md px-2 py-2">
