@@ -16,22 +16,22 @@ const vendas = () => {
 
         <div className="w-full md:w-1/2 mb-4 justify-center items-center bg-white shadow-lg rounded-lg flex flex-col">
           <img
-            src="black.jpg"
+            src="hora.jpg"
             alt="img"
             title="img"
             className="w-full h-auto object-cover rounded-t-lg"
           />
           <div className="w-full p-4 justify-start flex flex-col">
             <h4 className="border-b-2 text-vermelho  font-semibold">
-              Black Week - 22 à 29/11/2021
+              R$ 136,00 <span className="text-base text-gray-400">/mensal</span>
             </h4>
-            <p className="my-4 text-lg">Plano Musculação - Horário Livre</p>
+            <p className="my-4 text-lg">Plano Musculação - Hora Certa</p>
             <p className="my-4">
-              1 mês por R$ 99,00 depois R$ 150,00 no sistema de assinatura, sem
-              comprometer o limite de seu cartão !!!
+              Horário de acesso: Seg a Sex: 6h as 7h, 11h as 16h, 21h as 23h -
+              Sábados e feriados: 8h as 12h - SOMENTE MUSCULAÇÃO
             </p>
             <div className="w-full">
-              <a href="https://evo-totem.w12app.com.br/quattor/1/site/oportunidade/cadastro/823/0">
+              <a href="https://evo-totem.w12app.com.br/quattor/1/site/oportunidade/cadastro/691/0">
                 <button className=" bg-verde hover:bg-gray-700 text-white rounded-md px-10 py-2 transition-colors w-full">
                   Comprar
                 </button>
